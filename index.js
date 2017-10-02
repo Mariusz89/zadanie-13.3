@@ -9,6 +9,7 @@ process.stdin.on('readable', function() {
             	break;
             case '/versions':
              	console.log("Version node: " + process.versions.node);
+             	console.log("Language system: " + process.versions.LANG);
              	break;
         	default:
             	process.stdout.write('Wrong instruction!\n');
